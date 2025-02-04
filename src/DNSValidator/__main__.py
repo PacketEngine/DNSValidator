@@ -30,8 +30,8 @@ def get_args(argList: List[str]) -> argparse.Namespace:
         action="store", type=str, required=False)
     parser.add_argument("-o", "--output-file", help="Output file name (default: ./resolvers.txt)",
         action="store", type=str, required=False, default='resolvers.txt')
-    parser.add_argument("-r", "--root-domain", help="Root domain to compare (non-geolocated) (default: bet365.com)",
-        action="store", type=str, required=False, default='bet365.com')
+    parser.add_argument("-r", "--root-domain", help="Root domain to compare (non-geolocated) (default: starbucks.com.sg)",
+        action="store", type=str, required=False, default='starbucks.com.sg')
     parser.add_argument("-t", "--threads", help="Concurrent threads to run (default: 2)",
         action="store", type=int, required=False, default=2)
 
